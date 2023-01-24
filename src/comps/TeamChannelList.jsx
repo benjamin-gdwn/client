@@ -3,7 +3,6 @@ import {AddChannel} from '../assets/AddChannel';
 
 const TeamChannelList = (props, {children, error = false, loading, type}) => {
     // Handling the error state
-    console.log(props)
     if(error) {
         return type === 'team' ? (
             <div className="team-channel-list">
