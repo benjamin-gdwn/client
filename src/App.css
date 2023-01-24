@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #005fff;
-  --primary-color-alpha: #005fff1a;
+  --primary-color: #fc8803;
+  --primary-color-alpha: #fc7303;
 }
 
 html,
@@ -27,7 +27,7 @@ body {
   justify-content: center;
 
   padding: 2rem;
-  background: #005fff;
+  background: var(--primary-color);
 }
 
 .auth__form-container_image {
@@ -56,7 +56,7 @@ body {
 .auth__form-container_fields-content p {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: #05245a;
+  color: var(--primary-color-alpha);
   font-weight: 900;
 }
 
@@ -101,8 +101,8 @@ body {
 
 .auth__form-container_fields-content_input input:focus,
 .auth__form-container_fields-content_input input:active {
-  box-shadow: 0px 0px 0px 1.5px #005fff;
-  border-color: #005fff;
+  box-shadow: 0px 0px 0px 1.5px var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .auth__form-container_fields-content_input-password {
@@ -120,8 +120,8 @@ body {
 
 .auth__form-container_fields-content_button button {
   border-radius: 4px;
-  background: #005fff;
-  border: 1px solid #005fff;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color-alpha);
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -132,7 +132,7 @@ body {
 }
 
 .auth__form-container_fields-content_button button:hover {
-  background: #0066ff;
+  background: var(--primary-color);
 }
 
 .auth__form-container_fields-account {
@@ -396,6 +396,7 @@ body {
 .channel-list__list__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: var(--primary-color);
   width: 240px;
 }
@@ -432,7 +433,7 @@ body {
 }
 
 .channel-list__header {
-  padding-left: 16px;
+  
   height: 62px;
 }
 
@@ -452,7 +453,9 @@ body {
   align-items: center;
   padding-top: 16px;
   border-top: 1px solid #00000033;
+  width: 100%;
 }
+
 
 .channel-search__input__wrapper {
   display: flex;
@@ -463,17 +466,19 @@ body {
   border-radius: 8px;
   margin-bottom: 8px;
   border: 1px solid transparent;
-  width: 95%;
+  width: 90%;
 }
 
 .channel-search__input__wrapper:focus-within {
   border: 1px solid #fff;
+  
 }
 
 .channel-search__input__icon {
   width: 32px;
   display: flex;
   justify-content: center;
+  
 }
 
 .channel-search__input__text {
