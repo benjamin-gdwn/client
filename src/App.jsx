@@ -23,7 +23,7 @@ if (authToken) {
     authToken
   );
 }
-console.log(authToken);
+
 const App = () => {
   if (!authToken) {
     return <Auth />;

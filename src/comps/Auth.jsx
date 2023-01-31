@@ -27,7 +27,7 @@ const Auth = () => {
     e.preventDefault();
 
     const { username, password, phoneNumber, avatarURL } = form;
-    const URL = "http://192.168.0.118:5000/auth";
+    const URL = "http://localhost:5000/auth";
 
     const {
       data: { token, userId, hashedPassword, fullName },
